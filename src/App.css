@@ -1,0 +1,420 @@
+body{
+   margin: 0 auto;
+  padding: 0;
+  height: 100%; 
+}
+
+html{
+  height: 100%;
+}
+
+#pageHeading{
+    /*margin-top: 50px; */
+    /*text-align: left;*/
+    /*padding-left: 100px;*/
+    background-image: url("/img/backgrounds.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-position-y: 100%;*/
+    background-position: center center;
+    min-height: 100%;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+
+    
+}
+
+#skillsHeading{
+    background-image: url("/img/backgrounds.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-position: center center;*/
+    /*min-height: 100%;*/
+    position: fixed;
+    width: 100%;
+    height: 100%;
+
+    
+}
+
+.container{
+  padding-left: 10%;
+}
+
+.container h1{
+  color: darkcyan; 
+  margin-top: 0;
+  padding: 40px;
+  
+}
+
+.content{
+  padding-left: 10%;
+  color: lightpink;
+  font-family: 'Merienda', cursive;
+  
+}
+    
+  
+
+/*********     HEADER      *****/
+
+.portfolio-links {
+  list-style-type: none;
+  /*float: left;*/
+  
+}
+
+.portfolio-links li {
+  float: left;
+  /*padding: 20px;*/
+  /*margin: 20px;*/
+  
+}
+
+.portfolio-links li a{
+  text-decoration: none;
+  color: white;
+}
+
+.portfolio-links li a:hover{
+  font-size: 20px;
+  color: royalblue;
+  text-decoration: underline;
+}
+
+.portfolio-links li a:visited{
+
+}
+
+.portfolio-links li a:link{
+
+}
+
+.dwnld-res-btn{
+  float: right;
+  margin: 40px;
+}
+
+.header-div{
+  background: lightsteelblue ;
+  color:white ;
+  height: 100px;
+  margin-top: -20px;
+}
+
+
+/*******************NEW HEADER *********************/
+
+.new-header{
+  /*height: 200px;
+  /*width: 1200px;*/
+  /*background-image: url('/img/header-bg.jpg');*/
+  /*background-repeat: no-repeat;
+  background-blend-mode: darken;
+  margin-top: -20px;
+  background-color: black;*/
+  /*position: relative;*/
+  
+  display: flex;
+  justify-content: space-between;
+  /*height: 120px;*/
+  height: 160px;
+  margin-top: -25px;
+
+}
+
+.profile-pic{
+  height: 200px;
+  width: 200px;
+  float: left;
+  background-blend-mode: saturation;
+}
+
+.headerNav{
+  list-style: none;
+  float: right;  
+  margin-top: 120px;
+
+}
+
+/**************SIDE NAVIGATION************/
+
+.headerNav li {
+    
+    text-decoration: none;
+    font-size: 20px;
+    display: inline;
+    color: lightcoral;
+    text-transform:  uppercase;
+    text-shadow: 0.25px .25px wheat;
+    padding: 0px 20px;
+    position: relative;
+
+}
+
+.headerNav a:hover {
+    color: wheat;
+}
+
+.headerNav a:after {
+	content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  border-bottom: 1px solid;
+  margin-top: 10px;
+  opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+  /*color: wheat;*/
+}
+
+.headerNav a:hover:after {
+  opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+  color: wheat;  
+}
+
+
+
+/****************ABOUT ME PAGE**********************/
+
+#techDescription, #description{
+    /*color: lightpink;*/
+    font-family: 'Merienda', cursive;
+    /*text-align: center;*/
+    word-spacing: 5px;
+    /*margin: 0 auto;
+    padding: 0 70px; 
+*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    color: white;
+}
+
+#description{
+  margin-top: 10%;
+}
+
+#name, #des{
+    height: 100%;
+    position: relative;
+    padding: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 30em;
+    text-align: center;
+    margin: 0 auto;
+    
+    text-shadow: 1px 1px lightsteelblue;
+    letter-spacing: 2px;
+
+}
+
+#des{
+  opacity: 0;
+  /*transition: opacity 1s ease 10s;*/
+}
+
+
+  /*transform: translateY(-50%);*/
+  /*animation: type 1s steps(60,end); */
+  
+#name:nth-child(1){
+  animation: type2 5s steps(60,end);
+}
+
+#des:nth-child(2){
+  animation:  fade 2s steps(44,start) 1s 1 forwards, type2 11s steps(60,end) 2s;
+  /*, type2 5s steps(22,end) 3s;*/
+}
+
+#techDescription h4{
+  opacity: 0;
+  text-align: center;
+  margin: 0 auto;
+  animation:  techDescFade 5s steps(44,start) 5s 1 forwards;
+  padding-top: 20px;
+}
+
+#techDescription li{
+  opacity: 0;
+  text-align: center;
+  margin: 0 auto;
+  animation:  techDescFade 5s steps(44,start) 6s 1 forwards;
+}
+
+#techDescription p{
+  opacity: 0;
+  text-align: center;
+  margin: 0 auto;
+  animation:  techDescFade 5s steps(44,start) 8s 1 forwards;
+}
+
+#des:nth-child(2)::after{
+  opacity: 1;
+}
+/*type2 5s steps(60,end),*/
+@keyframes type{ 
+  from {width: 0;} 
+} 
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 50;}
+  100%{ width: 30em;} 
+}
+
+@keyframes fade{
+  0%{opacity: 0; }
+  50%{opacity: 0;}
+  
+  100%{ opacity: 1} 
+} 
+
+@keyframes techDescFade{
+  0%{opacity: 0; width:0;}
+  50%{opacity: 0; width: 0;}
+  
+  100%{ opacity: 1; width: 100%;} 
+} 
+
+/*#techDescription{
+  text-align: center;
+  word-spacing: 5px;
+  letter-spacing: 2px;
+  width: 70em;
+  margin: 0 auto;
+  text-shadow: 1px 1px lightsteelblue;
+  
+}*/
+
+#profilePic{
+  float: left;
+
+}
+
+#nameDetails{
+  /*float: left;*/
+  /*padding: 40px;*/
+  /*margin-top: -40px;*/
+}
+
+.clear{
+  clear: both;
+}
+
+/*************************/
+
+
+/*****************SKILLS******************/
+
+.skillHeader{
+
+  color: grey;
+  /*text-decoration: underline;*/
+  /*text-align: center;*/
+  /*margin-bottom: 0px;*/
+  position: relative;
+}
+
+.skillHeader span img{
+  padding-left: 10px;
+}
+
+#skillsPage{
+    margin-top: 80px; 
+    text-align: left;
+    padding-left: 200px;
+    
+}
+
+ #skillsPage h1{
+  color: darkcyan; 
+  
+}
+
+.content ul{
+  list-style: circle;
+}
+
+ .content li{
+    color: lightpink;
+    display: inline;
+    /*width: 50px;*/
+    padding: 20px;
+  list-style: circle;
+    
+}
+
+.content hr{
+    width: 80%;
+    margin-left: 0px;
+}
+
+/********************************************
+
+/*************EDUCATION*********************/
+
+.eduSpan{
+
+    /*padding: 10px;*/
+    border: 5px solid white;
+    
+}
+
+.eduSpan img{
+   /*padding-top: 70px;*/
+   float:  left;
+   padding-right:  20px;
+}
+
+.eduClass{
+    display: grid;
+    grid-gap: 10px;
+    grid: 220px / 500px 500px;
+    /*color: steelblue;*/
+    
+}
+
+.eduSpan h3{
+  display: inline;
+  color: grey;
+  /*text-decoration: underline dashed steelblue;*/
+  text-shadow: 1px 1px lightsteelblue;
+
+}
+
+.eduSpan h4{
+  display: inline;
+  
+}
+
+/*********************EXPERIENCE************************/
+
+/*.companyIcon img{
+  float: left;
+  padding-right: 20px;
+}*/
+
+.companyIcons li{
+  /*display: inline;*/
+  text-align: center;
+}
+
+.companyIcons{
+  list-style-type: none;
+  display: grid;
+  grid: 240px / auto auto auto;
+  grid-gap: 10px; 
+}
