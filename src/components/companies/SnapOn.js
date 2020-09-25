@@ -13,7 +13,7 @@ class SnapOn extends Component{
         console.log("in SnapOn render");
         
         return (
-                <div id="pageHEading">
+                <div>
                     <h1> SnapOn </h1>
                 </div>
         );

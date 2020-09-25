@@ -13,7 +13,7 @@ class Sapient extends Component{
         console.log("in Sapient render");
         
         return (
-                <div id="pageHEading">
+                <div>
                     <h1> Sapient </h1>
                 </div>
         );

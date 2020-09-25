@@ -13,7 +13,7 @@ class Wipro extends Component{
         console.log("in wipro render");
         
         return (
-                <div id="pageHEading">
+                <div className="companyDetails">
                     <h1> Wipro </h1>
 
                     <h2>Projects :</h2>

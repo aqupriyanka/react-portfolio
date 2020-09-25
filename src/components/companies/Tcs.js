@@ -13,7 +13,7 @@ class Tcs extends Component{
         console.log("in tcs render");
         
         return (
-                <div id="pageHEading">
+                <div className="companyDetails">
                     <h1> TCS </h1>
 
                     <h2>Deutsche Bank, India— Developer</h2>

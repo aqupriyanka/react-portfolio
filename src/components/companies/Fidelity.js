@@ -13,7 +13,7 @@ class Fidelity extends Component{
         console.log("in Fidelity render");
         
         return (
-                <div id="pageHEading">
+                <div>
                     <h1> Fidelity </h1>
                 </div>
         );

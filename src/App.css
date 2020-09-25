@@ -15,14 +15,15 @@ html{
     background-image: url("/img/backgrounds.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    color: white;
     /*background-position-y: 100%;*/
     background-position: center center;
     min-height: 100%;
     position: fixed;
     width: 100%;
     height: 100%;
-
-    
+    overflow: auto;
+    padding: 16px;
 }
 
 #skillsHeading{
@@ -36,6 +37,11 @@ html{
     height: 100%;
 
     
+}
+
+#pageHeading .companyDetails {
+  position: inherit;
+  margin-bottom: 160px;
 }
 
 .container{
